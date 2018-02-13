@@ -1,0 +1,223 @@
+/* You can add global styles to this file, and also import other style files */
+.mat-raised-button.mat-primary {
+    background: #c52d44;
+}
+.mat-fab.mat-accent, .mat-mini-fab.mat-accent, .mat-raised-button.mat-accent {
+    background-color: #c52d44;
+}
+.mat-raised-button.mat-primary {
+    color: #fff;
+}
+.green-btn {
+    background:#5cc151;
+    color: #fff !important;
+}
+.LI-sidenav {
+    background: #2f3b4c;
+}
+mat-sidenav-content {
+    background: #eceef2;
+}
+.sidebarnav-logo {
+    background: #fff;
+}
+.profile-div {
+    background: #2a3344;
+}
+.profile-div::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 1px;
+    background: #555f72;
+    left: 10%;
+}
+.profile-element .profile-name {
+    color: #fff;
+}
+.profile-desg {
+    color: #b0bec5;   
+}
+.profile-logout {
+    color: #c52d44;
+}
+.sidenav-menu ul li a {
+    color: #b0bec5;
+}
+.sidenav-menu ul li.active {
+    border-left: 4px solid #c52d44;
+    background: #2a3344;
+}
+.sidenav-menu ul li a.active-link {
+    color: #c52d44;
+    border-left: 4px solid #c52d44;
+}
+.sidenav-menu ul li a:hover {
+    border-left: 4px solid #c52d44;
+    background: #2a3344;
+}
+.main-right .LI-toolbar {
+    background: transparent;
+}
+.sidenav-menu ul li li a {
+    color: #8c9fa9;
+}
+.dropmenu .mat-expansion-panel-header-title {
+    color: #b0bec5;
+}
+.mat-expansion-indicator::after {
+    color: #b0bec5;
+}
+.header .header-search:after {
+    background-color: #c52d44;
+}
+.country-box {
+    background: #fff;
+    border: 1px solid #c7c7c7;
+}
+.country-box .country-icon {
+    border-right: 1px solid #999;
+}
+.country-box .country-data .country-name {
+    color: #666;
+}
+.country-box .country-data .country-count {
+    color: #c52d44;
+}
+.country-box:hover {
+    background: #c52d44;
+    border: 1px solid transparent;
+    box-shadow: 5px 0px 10.45px 0.55px rgba(0, 0, 0, 0.14); 
+}
+.country-box:hover .country-icon {
+    border-right: 1px solid #d7d7d7;
+}
+.country-box:hover .country-data .country-name {
+    color: #fff;
+}
+.country-box:hover .country-data .country-count {
+    color: #fff;
+}
+.issues-main {
+    background: #c52d44;
+}
+.issue-box .issue-data .issue-name {
+    color: #fff;
+}
+.issue-box .issue-data .issue-count {
+    color: #fff;
+}
+.issue-box {
+    border-right: 1px solid #fff;
+}
+.issue-box:last-child {
+    border-right: 0px solid #fff;
+}
+.country-fic-header {
+    border-bottom: 2px solid #c52d44;
+}
+.country-fic-title h3 {
+    border-bottom: 5px solid #c52d44;
+    text-transform: uppercase;
+    color: #c52d44;
+}
+.country-fic-select-box {
+    border: 1px solid #c52d44;
+    border-bottom: none;
+}
+.country-fic-select-box .select-dropdown {
+    background: transparent;
+    color: #c52d44;
+    border-right: 1px solid #c52d44 !important;
+}
+.country-fic-select-box .select-dropdown:last-child {
+    border-right: 0px solid #fff !important;
+}
+.country-fic-table th.grey {
+    color: #8f8f8f;
+}
+.country-fic-table th.red {
+    color: #ff8799;
+}
+.country-fic-table th.green {
+    color: #33de80;
+}
+.country-fic-table th.blue {
+    color: #00bfe8;
+}
+.country-fic-table td.grey {
+    color: #555555;
+}
+.country-fic-table td.red {
+    color: #ff8799;
+}
+.country-fic-table td.green {
+    color: #33de80;
+}
+.country-fic-table td.blue {
+    color: #00bfe8;
+}
+
+/*--------------Branch Management Page--------------*/
+.addbranch {
+    background: #fff;
+    border: 1px solid #c7c7c7;
+}
+.addbranch h4 {
+    color: #555;
+}
+.branch-label {
+    color: #a1a1a1;
+}
+.branch-list-box {
+    border: 1px solid #c7c7c7;
+    background: #fff;
+}
+.branch-list-box h4 {
+    color: #555;
+}
+.branch-list-box p {
+    color: #8f8f8f;
+}
+.branch-list-btns {
+    border: 1px solid #d9d9d9;
+}
+.branch-list-btns .view-btn, .branch-list-btns .edit-btn {
+    border-bottom: 1px solid #d9d9d9;
+}
+.branch-list-btns .view-btn a i, .branch-list-btns .edit-btn a i, .branch-list-btns .close-btn a i {
+    color: #aaa;
+}
+.branch-list-btns .view-btn a:hover i, .branch-list-btns .edit-btn a:hover i, .branch-list-btns .close-btn a:hover i {
+    color: #c93c51;
+}
+
+/*--------------Global Heads Page--------------*/
+
+.gh-list-box {
+    border: 1px solid #c7c7c7;
+    background: #fff;
+}
+.country-label {
+    color: #a1a1a1;
+}
+
+/*---------------Media Queries-------------*/
+
+@media screen and (max-width:959px) {
+    .issue-box {
+        border-bottom: 1px solid #fff;
+    }
+    .country-fic-header {
+        border-bottom: 0px solid #c52d44;
+    }
+    .country-fic-select-box .select-dropdown {
+        border-right: 0px solid #fff !important;
+        border-bottom: 1px solid #c52d44 !important;
+    }
+    .country-fic-select-box .select-dropdown:last-child {
+        border-bottom: 0px solid #fff;
+    }
+}

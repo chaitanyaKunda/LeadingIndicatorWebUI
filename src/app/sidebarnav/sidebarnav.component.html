@@ -1,0 +1,54 @@
+<div fxLayout="column" fxFlex>
+    <mat-toolbar class="LI-toolbar" fxFlex="initial">
+      <div class="sidebarnav-logo" fxLayout="row" fxLayoutAlign="start center">
+        <a href="#"><img src="../assets/images/sidebar-logo.png" ></a>
+      </div>
+    </mat-toolbar>
+    <div class="profile-div">
+      <div class="profile-element">
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <div fxFlex="initial">
+            <img src="../assets/images/user-profile.png" />
+          </div>
+          <div class="fxFlex profile-element-data">
+            <p class="profile-name">Raj Gunturu</p>
+            <p class="profile-desg">Global Admin</p>
+          </div>
+        </div>
+        <a routerLink="/" class="profile-logout"><i class="material-icons">power_settings_new</i></a>
+      </div>
+      <div class="sidenav-menu">
+        <ul>
+          <li><a routerLink="/mainpage/dashboard" routerLinkActive="active-link">Dashboard</a></li>
+          <!--<li class="dropmenu">
+            <mat-accordion>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Administration
+                  </mat-panel-title>                      
+                </mat-expansion-panel-header>                
+                <ul>
+                    <li><a href="#">Global Heads</a></li>
+                    <li><a href="#">Branch Management</a></li>
+                </ul>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </li> -->
+          <li><a routerLink="/mainpage/globalheads" routerLinkActive="active-link">Global Heads</a></li>
+          <li><a routerLink="/mainpage/branch" routerLinkActive="active-link">Branch Management</a></li>
+        </ul>
+      </div>
+    </div>
+    <div fxFlex class="overflow-y-auto menu-scroll">
+      <div class="sidenav-menu">
+          <ul>                     
+            <li><a href="#">Safety Inspection (FIC)</a></li>
+            <li><a href="#">Behavioral Observations</a></li>
+            <li><a href="#">Unsafe Conditions / Unsafe Acts</a></li>
+            <li><a href="#">Monitoring and Measurements</a></li>
+            <li><a href="#">Casual / Temporary / Contracts</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>

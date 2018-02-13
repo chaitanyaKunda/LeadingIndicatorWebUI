@@ -1,0 +1,12 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav [mode]="isLargeScreen() ? 'side' : 'over'" [opened]="isLargeScreen()" class="LI-sidenav" fxLayout="column">
+      <app-sidebarnav fxFlex></app-sidebarnav>
+    </mat-sidenav>
+  
+    <mat-sidenav-content fxLayout="column">
+      <button mat-icon-button fxFlex="initial" (click)="sidenav.toggle()" class="menu-hamberger"><img src="../assets/images/menu-hamberger.png" /></button>
+      <!--<app-dashboard fxFlex></app-dashboard>
+      <app-branchmgmt fxFlex></app-branchmgmt>-->
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

@@ -1,0 +1,584 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "theme.css";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+/*------Common Css-----------*/
+.mat-form-field {
+    display: block !important;
+    padding: 0 15px;
+}
+.mat-form-field-infix {
+    width:inherit !important;
+}
+.p-right-30 {
+    padding-right: 30px;
+}
+.m-bottom-10 {
+    margin-bottom: 10px;
+}
+img {
+    border: none;
+}
+a:focus {
+    outline: none;
+}
+app-dashboard, app-branchmgmt, app-globalheads {
+    flex: 1 1 1e-09px;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+}
+.mat-raised-button.mat-primary {
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 44px;
+    padding: 0 25px;
+    box-shadow: none !important;
+}
+.mat-raised-button.close-btn {
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 44px;
+    padding: 0 25px;
+    box-shadow: none !important;
+    border: 1px solid #aaa;
+    margin-left: 5px;
+}
+.form-txtbox {
+    border: 1px solid #c7c7c7;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    padding: 12px 15px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.form-txtarea {
+    border: 1px solid #c7c7c7;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    padding: 12px 15px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.form-select {
+    border: 1px solid #c7c7c7;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    padding: 11px 15px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.form-control {
+    margin-bottom: 20px;
+}
+
+/*----------Login Page---------*/
+.login-page {
+    background: url(assets/images/login-bg.jpg) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.login-box {
+    width: 420px;
+    background: #fff;
+    margin-right: 30px;
+    padding: 60px;
+}
+.login-box .mat-form-field {
+    padding: 0;
+}
+.login-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.login-btn {
+    border-radius: 4px !important;
+    text-transform: uppercase;
+    padding: 2px 30px !important;
+    font-size: 15px;
+}
+
+/*---------Side Navigation----------*/
+
+.LI-sidenav {
+    width: 315px;
+}
+mat-sidenav-container {
+    height: 100%;
+}
+
+mat-toolbar.LI-toolbar {
+    min-height: 86px;
+    padding: 0px;
+}
+.sidebarnav-logo {
+    height: 86px;
+    width: 100%;
+}
+.sidebarnav-logo a {
+    padding: 0 30px;
+}
+
+.profile-element {
+    padding: 35px 10px 25px 30px;
+}
+.profile-element .profile-name {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 3px;
+    padding-right: 35px;
+}
+.profile-element-data {
+    padding-left: 20px;
+}
+.profile-desg {
+    font-size: 16px;
+    font-weight: 400;
+}
+.sidenav-menu {
+    margin-top: 15px;
+}
+.sidenav-menu ul {
+    margin: 0;
+    padding: 0;
+}
+.sidenav-menu ul li {
+    list-style: none;    
+    border-bottom: 1px solid transparent;
+}
+.sidenav-menu ul li.active li, .sidenav-menu ul li:hover li {
+    list-style: none;
+    border-left: 4px solid transparent;
+}
+.sidenav-menu ul li li a {
+    font-size: 14px;
+}
+.sidenav-menu ul li a {
+    padding: 15px 15px 15px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    display: block;   
+    border-left: 4px solid transparent; 
+}
+.profile-div .sidenav-menu {
+    margin-top: 0px;
+}
+.profile-div .sidenav-menu ul li a {
+    padding: 8px 15px 8px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    display: block;    
+}
+.profile-div {
+    padding-bottom: 20px;
+    position: relative;
+}
+.profile-element {
+    position: relative;
+}
+.profile-logout {
+    position: absolute;
+    right: 15px;
+    top: 45px;
+}
+.profile-logout i {
+    font-size: 28px;
+}
+.overflow-y-auto {
+    overflow-y: auto;
+}
+.overflow-auto {
+    overflow: auto;
+}
+.menu-scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+.menu-scroll::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+.menu-scroll::-webkit-scrollbar-thumb
+{
+	background-color: #8a8a8a;
+}
+.dropmenu .mat-expansion-panel {
+    background: none;
+    box-shadow: none;
+}
+.dropmenu .mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+}
+.dropmenu .mat-expansion-panel-header {
+    padding: 15px 15px 15px 30px;
+    border-left: 4px solid transparent;
+}
+.dropmenu .mat-expansion-panel-header-title {
+    margin-right: 0;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/*----------Right Side Content------------*/
+.menu-hamberger {
+    position: absolute !important;
+    left: 20px;
+    top: 23px;
+    cursor: pointer;
+    min-width: inherit !important;
+    padding: 0 !important;
+    line-height: inherit !important;
+}
+.menu-hamberger:hover {
+    background: none;
+}
+.main-right .LI-toolbar {
+    padding: 0 30px 0 30px;
+}
+.main-right .main-right-content {
+    padding: 0 30px;
+}
+.main-right .LI-toolbar .header-title {
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sm-filter-icon {
+    background: #dadce2;
+}
+.mat-toolbar, .mat-toolbar h1, .mat-toolbar h2, .mat-toolbar h3, .mat-toolbar h4, .mat-toolbar h5, .mat-toolbar h6 {
+    font:inherit;
+}
+.mat-toolbar .header {
+    width: 100%;
+}
+.header .select-dropdown {
+    border: 1px solid #c7c7c7;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    padding: 12px 15px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.header .search-txtbox {
+    border: 1px solid #c7c7c7;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5) inset;
+    padding: 12px 15px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.header .header-search {
+    position: relative;
+    padding-right: 20px;
+}
+.header .header-search:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-image: url(assets/images/search-txtbox-icon.png);
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background-position: center;
+}
+.country-box {
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+.country-box .country-icon {
+    padding: 0 15px;
+}
+.country-box .country-icon .asia-icon {
+    background: url(assets/images/asia-map-grey.png) no-repeat; 
+    width: 50px;
+    height: 41px;
+}
+.country-box:hover .country-icon .asia-icon {
+    background: url(assets/images/asia-map-white.png) no-repeat; 
+    width: 50px;
+    height: 41px;
+}
+.country-box .country-icon .africa-icon {
+    background: url(assets/images/africa-map-grey.png) no-repeat; 
+    width: 41px;
+    height: 40px;
+}
+.country-box:hover .country-icon .africa-icon {
+    background: url(assets/images/africa-map-white.png) no-repeat; 
+    width: 41px;
+    height: 40px;
+}
+.country-box .country-icon .north-america-icon {
+    background: url(assets/images/north-america-map-grey.png) no-repeat; 
+    width: 48px;
+    height: 52px;
+}
+.country-box:hover .country-icon .north-america-icon {
+    background: url(assets/images/north-america-map-white.png) no-repeat; 
+    width: 48px;
+    height: 52px;
+}
+.country-box .country-icon .south-america-icon {
+    background: url(assets/images/south-america-grey.png) no-repeat; 
+    width: 28px;
+    height: 47px;
+}
+.country-box:hover .country-icon .south-america-icon {
+    background: url(assets/images/south-america-map-white.png) no-repeat; 
+    width: 28px;
+    height: 47px;
+}
+.country-box .country-icon .antarcitika-icon {
+    background: url(assets/images/antarcitika-map-grey.png) no-repeat; 
+    width: 48px;
+    height: 41px;
+}
+.country-box:hover .country-icon .antarcitika-icon {
+    background: url(assets/images/antarcitika-map-white.png) no-repeat; 
+    width: 48px;
+    height: 41px;
+}
+.country-box .country-icon .europe-icon {
+    background: url(assets/images/europe-map-grey.png) no-repeat; 
+    width: 49px;
+    height: 50px;
+}
+.country-box:hover .country-icon .europe-icon {
+    background: url(assets/images/europe-map-white.png) no-repeat; 
+    width: 49px;
+    height: 50px;
+}
+.country-box .country-icon .australia-icon {
+    background: url(assets/images/australia-map-grey.png) no-repeat; 
+    width: 50px;
+    height: 46px;
+}
+.country-box:hover .country-icon .australia-icon {
+    background: url(assets/images/australia-map-white.png) no-repeat; 
+    width: 50px;
+    height: 46px;
+}
+.country-box .country-data {
+    padding: 0 20px;
+}
+.country-box .country-data .country-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.country-box .country-data .country-count {
+    font-size: 24px;
+    font-weight: 500;
+}
+.issues-main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.issue-box {
+    padding: 20px 40px;
+}
+.issue-data {
+    padding-left: 30px;
+}
+.issue-box .issue-data .issue-name {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.issue-box .issue-data .issue-count {
+    font-size: 22px;
+    font-weight: 500;
+}
+.country-fic {
+    margin-top: 30px;
+}
+.country-fic-title h3 {
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 6px;
+}
+.country-fic-select-box .select-dropdown {
+    border: none;
+    padding: 8px 10px 6px 10px;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.country-fic-content {
+    padding: 15px 0;
+}
+.country-fic-content .mat-card {
+    padding: 20px;
+}
+.country-fic-content-box {
+    margin-bottom: 15px;
+}
+.country-fic-table th {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 700;
+}
+.country-fic-table th.grey {
+    font-weight: 500;
+}
+.country-fic-table td {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 5px;
+}
+.country-fic-table td.grey {
+    font-weight: 500;
+}
+
+/*--------------Branch Management Page--------------*/
+.addbranch {
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+}
+.addbranch h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.branch-label {
+    display: block;
+    margin-bottom: 5px;
+}
+.branch-list-sec-content {
+    margin: 20px 0;
+}
+.branch-list-box {
+    padding: 20px;
+    padding-right: 48px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.branch-list-box h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.branch-list-box p {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.branch-list-btns {
+    position: absolute;
+    right: -1px;
+    width: 48px;
+    top: -1px;
+}
+.branch-list-btns .view-btn, .branch-list-btns .edit-btn {
+    height: 48px;
+}
+.branch-list-btns .close-btn {
+    height: 48px;
+}
+
+/*--------------Global Heads Page--------------*/
+
+.gh-list-sec-content {
+    margin: 20px 0;
+}
+.gh-list-box {
+    padding: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.country-label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.country-avatar-details {
+    margin-bottom: 20px;
+}
+.image-avatar {
+    width: 36px;
+    height: 36px;
+    background: #848484;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.image-avatar-data {
+    margin-right: 10px;
+}
+.image-avatar-name {
+    color: #555;
+    font-size: 14px;
+    margin-top: 3px;
+}
+.image-avatar-mail {
+    color: #8f8f8f;
+    font-size: 12px;
+}
+
+
+/*---------------Media Queries-------------*/
+
+@media screen and (max-width:959px) {
+    .login-box {
+        width: 420px;
+        background: #fff;
+        margin-right: 0px;
+        margin: 0 20px;
+        padding: 40px;
+    }
+    .issue-box {
+        padding: 20px 40px;
+    }
+    .country-fic-title h3 {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,366 @@
+<div fxLayout="column" fxFlex class="main-right">
+    <mat-toolbar class="LI-toolbar" fxFlex="initial">
+        <div fxLayout="row" fxFlex class="header">
+            <div fxFlex="initial" fxLayoutAlign="start center">
+                <h2 class="header-title">Dashboard</h2>
+            </div>
+            <div fxFlex fxLayout="row" fxLayoutAlign="end center" fxHide.md="true" fxHide.lg="true">
+                <button mat-icon-button [matMenuTriggerFor]="menu" class="sm-filter-icon"><i class="material-icons">more_vert</i></button>
+                <mat-menu #menu="matMenu">
+                    <mat-select placeholder="Filter by Year">
+                        <mat-option>2018</mat-option>
+                        <mat-option>2017</mat-option>
+                        <mat-option>2016</mat-option>
+                    </mat-select>
+                    <mat-select placeholder="Filter by Year">
+                        <mat-option>2018</mat-option>
+                        <mat-option>2017</mat-option>
+                        <mat-option>2016</mat-option>
+                    </mat-select>              
+                </mat-menu>
+            </div>
+            <div fxFlex fxLayout="row" fxLayoutAlign="end center" fxHide.sm="true" fxHide.xs="true">
+                <div fxFlex="20">
+                   <select class="select-dropdown">
+                       <option>Filter by Year</option>
+                       <option>2018</option>
+                       <option>2017</option>
+                       <option>2016</option>
+                   </select>
+                </div>
+                <span fxFlex="1"></span>
+                <div fxFlex="20">
+                    <select class="select-dropdown">
+                        <option>Filter by Month</option>
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                    </select>
+                </div>
+                <span fxFlex="1"></span>
+                <div fxFlex="35" class="header-search">
+                    <input type="text" placeholder="Search" class="search-txtbox">
+                </div>            
+            </div>
+        </div>
+    </mat-toolbar>
+    <div fxFlex class="main-right-content overflow-auto">
+        <div class="country-main" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutWrap>
+            <div fxFlex="24" class="country-box" fxLayout="row">
+                <div fxFlex="initial" class="country-icon" fxLayoutAlign="center center">
+                    <div class="asia-icon"></div>
+                </div>
+                <div fxFlex class="country-data" fxLayoutAlign="center start" fxLayout="column">
+                    <div class="country-name">Asia</div>
+                    <div class="country-count">2343</div>
+                </div>
+            </div>
+            <span fxFlex="1"></span>
+            <div fxFlex="24" class="country-box" fxLayout="row">
+                <div fxFlex="initial" class="country-icon" fxLayoutAlign="center center">
+                    <div class="africa-icon"></div>
+                </div>
+                <div fxFlex class="country-data" fxLayoutAlign="center start" fxLayout="column">
+                    <div class="country-name">Africa</div>
+                    <div class="country-count">2343</div>
+                </div>
+            </div>
+            <span fxFlex="1"></span>
+            <div fxFlex="24" class="country-box" fxLayout="row">
+                <div fxFlex="initial" class="country-icon" fxLayoutAlign="center center">
+                    <div class="north-america-icon"></div>
+                </div>
+                <div fxFlex class="country-data" fxLayoutAlign="center start" fxLayout="column">
+                    <div class="country-name">North America</div>
+                    <div class="country-count">2343</div>
+                </div>
+            </div>
+            <span fxFlex="1"></span>
+            <div fxFlex="25" class="country-box" fxLayout="row">
+                <div fxFlex="initial" class="country-icon" fxLayoutAlign="center center">
+                    <div class="south-america-icon"></div>
+                </div>
+                <div fxFlex class="country-data" fxLayoutAlign="center start" fxLayout="column">
+                    <div class="country-name">South America</div>
+                    <div class="country-count">2343</div>
+                </div>
+            </div>
+            <div fxFlex="24" class="country-box" fxLayout="row">
+                <div fxFlex="initial" class="country-icon" fxLayoutAlign="center center">
+                    <div class="antarcitika-icon"></div>
+                </div>
+                <div fxFlex class="country-data" fxLayoutAlign="center start" fxLayout="column">
+                    <div class="country-name">Antarctica</div>
+                    <div class="country-count">2343</div>
+                </div>
+            </div>
+            <span fxFlex="1"></span>
+            <div fxFlex="24" class="country-box" fxLayout="row">
+                <div fxFlex="initial" class="country-icon" fxLayoutAlign="center center">
+                    <div class="europe-icon"></div>
+                </div>
+                <div fxFlex class="country-data" fxLayoutAlign="center start" fxLayout="column">
+                    <div class="country-name">Europe</div>
+                    <div class="country-count">2343</div>
+                </div>
+            </div>
+            <span fxFlex="1"></span>
+            <div fxFlex="24" class="country-box" fxLayout="row">
+                <div fxFlex="initial" class="country-icon" fxLayoutAlign="center center">
+                    <div class="australia-icon"></div>
+                </div>
+                <div fxFlex class="country-data" fxLayoutAlign="center start" fxLayout="column">
+                    <div class="country-name">Australia</div>
+                    <div class="country-count">2343</div>
+                </div>
+            </div>
+        </div>
+        <div class="issues-main">
+            <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+                <div fxFlex="33" class="issue-box" fxLayout="row">
+                    <div fxFlex="initial" class="issue-icon" fxLayoutAlign="center center">
+                        <div class="issue-icon">
+                            <img src="../assets/images/issue-open.png" />
+                        </div>
+                    </div>
+                    <div fxFlex class="issue-data" fxLayoutAlign="center start" fxLayout="column">
+                        <div class="issue-name">Open State</div>
+                        <div class="issue-count">1003</div>
+                    </div>
+                </div>
+                <div fxFlex="33" class="issue-box" fxLayout="row">
+                    <div fxFlex="initial" class="issue-icon" fxLayoutAlign="center center">
+                        <div class="issue-icon">
+                            <img src="../assets/images/issue-pending.png" />
+                        </div>
+                    </div>
+                    <div fxFlex class="issue-data" fxLayoutAlign="center start" fxLayout="column">
+                        <div class="issue-name">Pending State</div>
+                        <div class="issue-count">140</div>
+                    </div>
+                </div>
+                <div fxFlex="34" class="issue-box" fxLayout="row">
+                    <div fxFlex="initial" class="issue-icon" fxLayoutAlign="center center">
+                        <div class="issue-icon">
+                            <img src="../assets/images/issue-closed.png" />
+                        </div>
+                    </div>
+                    <div fxFlex class="issue-data" fxLayoutAlign="center start" fxLayout="column">
+                        <div class="issue-name">Closed State</div>
+                        <div class="issue-count">1200</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="country-fic">
+            <div class="country-fic-header" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+                <div fxFlex="50" class="country-fic-title">
+                    <h3>Country wise FIC’s</h3>
+                </div>
+                <div fxFlex class="country-fic-select-box">
+                    <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+                        <select class="select-dropdown" fxFlex="50">
+                            <option>Select Country</option>
+                            <option>India</option>
+                            <option>America</option>
+                            <option>Africa</option>
+                        </select>
+                        <select class="select-dropdown" fxFlex="50">
+                            <option>Select Branch</option>
+                            <option>India</option>
+                            <option>India</option>
+                            <option>India</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="country-fic-content" fxLayout="row" fxLayoutWrap fxLayout.sm="column" fxLayout.xs="column">
+                <div class="country-fic-content-box" fxFlex="49" fxFlex.sm="100" fxFlex.xs="100">
+                    <mat-card>
+                        <table width="100%" cellpadding="0" cellspacing="0" class="country-fic-table">
+                            <tr>
+                                <th class="grey">Country Name</th>
+                                <th class="red">Total</th>
+                                <th class="green">Completed</th>
+                                <th class="blue">In-completed</th>
+                            </tr>
+                            <tr>
+                                <td class="grey" width="40%">Australia</td>
+                                <td class="red" width="20%">17</td>
+                                <td class="green" width="20%">0</td>
+                                <td class="blue" width="20%">17</td>
+                            </tr>
+                        </table>
+                    </mat-card>
+                </div>
+                <span fxFlex="2"></span>
+                <div class="country-fic-content-box" fxFlex="49" fxFlex.sm="100" fxFlex.xs="100">
+                    <mat-card>
+                        <table width="100%" cellpadding="0" cellspacing="0" class="country-fic-table">
+                            <tr>
+                                <th class="grey">Country Name</th>
+                                <th class="red">Total</th>
+                                <th class="green">Completed</th>
+                                <th class="blue">In-completed</th>
+                            </tr>
+                            <tr>
+                                <td class="grey" width="40%">Australia</td>
+                                <td class="red" width="20%">17</td>
+                                <td class="green" width="20%">0</td>
+                                <td class="blue" width="20%">17</td>
+                            </tr>
+                        </table>
+                    </mat-card>
+                </div>
+                <div class="country-fic-content-box" fxFlex="49" fxFlex.sm="100" fxFlex.xs="100">
+                    <mat-card>
+                        <table width="100%" cellpadding="0" cellspacing="0" class="country-fic-table">
+                            <tr>
+                                <th class="grey">Country Name</th>
+                                <th class="red">Total</th>
+                                <th class="green">Completed</th>
+                                <th class="blue">In-completed</th>
+                            </tr>
+                            <tr>
+                                <td class="grey" width="40%">Australia</td>
+                                <td class="red" width="20%">17</td>
+                                <td class="green" width="20%">0</td>
+                                <td class="blue" width="20%">17</td>
+                            </tr>
+                        </table>
+                    </mat-card>
+                </div>
+                <span fxFlex="2"></span>
+                <div class="country-fic-content-box" fxFlex="49" fxFlex.sm="100" fxFlex.xs="100">
+                    <mat-card>
+                        <table width="100%" cellpadding="0" cellspacing="0" class="country-fic-table">
+                            <tr>
+                                <th class="grey">Country Name</th>
+                                <th class="red">Total</th>
+                                <th class="green">Completed</th>
+                                <th class="blue">In-completed</th>
+                            </tr>
+                            <tr>
+                                <td class="grey" width="40%">Australia</td>
+                                <td class="red" width="20%">17</td>
+                                <td class="green" width="20%">0</td>
+                                <td class="blue" width="20%">17</td>
+                            </tr>
+                        </table>
+                    </mat-card>
+                </div>
+                <div class="country-fic-content-box" fxFlex="49" fxFlex.sm="100" fxFlex.xs="100">
+                    <mat-card>
+                        <table width="100%" cellpadding="0" cellspacing="0" class="country-fic-table">
+                            <tr>
+                                <th class="grey">Country Name</th>
+                                <th class="red">Total</th>
+                                <th class="green">Completed</th>
+                                <th class="blue">In-completed</th>
+                            </tr>
+                            <tr>
+                                <td class="grey" width="40%">Australia</td>
+                                <td class="red" width="20%">17</td>
+                                <td class="green" width="20%">0</td>
+                                <td class="blue" width="20%">17</td>
+                            </tr>
+                        </table>
+                    </mat-card>
+                </div>
+                <span fxFlex="2"></span>
+                <div class="country-fic-content-box" fxFlex="49" fxFlex.sm="100" fxFlex.xs="100">
+                    <mat-card>
+                        <table width="100%" cellpadding="0" cellspacing="0" class="country-fic-table">
+                            <tr>
+                                <th class="grey">Country Name</th>
+                                <th class="red">Total</th>
+                                <th class="green">Completed</th>
+                                <th class="blue">In-completed</th>
+                            </tr>
+                            <tr>
+                                <td class="grey" width="40%">Australia</td>
+                                <td class="red" width="20%">17</td>
+                                <td class="green" width="20%">0</td>
+                                <td class="blue" width="20%">17</td>
+                            </tr>
+                        </table>
+                    </mat-card>
+                </div>
+                <div class="country-fic-content-box" fxFlex="49" fxFlex.sm="100" fxFlex.xs="100">
+                    <mat-card>
+                        <table width="100%" cellpadding="0" cellspacing="0" class="country-fic-table">
+                            <tr>
+                                <th class="grey">Country Name</th>
+                                <th class="red">Total</th>
+                                <th class="green">Completed</th>
+                                <th class="blue">In-completed</th>
+                            </tr>
+                            <tr>
+                                <td class="grey" width="40%">Australia</td>
+                                <td class="red" width="20%">17</td>
+                                <td class="green" width="20%">0</td>
+                                <td class="blue" width="20%">17</td>
+                            </tr>
+                        </table>
+                    </mat-card>
+                </div>
+                <span fxFlex="2"></span>
+                <div class="country-fic-content-box" fxFlex="49" fxFlex.sm="100" fxFlex.xs="100">
+                    <mat-card>
+                        <table width="100%" cellpadding="0" cellspacing="0" class="country-fic-table">
+                            <tr>
+                                <th class="grey">Country Name</th>
+                                <th class="red">Total</th>
+                                <th class="green">Completed</th>
+                                <th class="blue">In-completed</th>
+                            </tr>
+                            <tr>
+                                <td class="grey" width="40%">Australia</td>
+                                <td class="red" width="20%">17</td>
+                                <td class="green" width="20%">0</td>
+                                <td class="blue" width="20%">17</td>
+                            </tr>
+                        </table>
+                    </mat-card>
+                </div>
+                <div class="country-fic-content-box" fxFlex="49" fxFlex.sm="100" fxFlex.xs="100">
+                    <mat-card>
+                        <table width="100%" cellpadding="0" cellspacing="0" class="country-fic-table">
+                            <tr>
+                                <th class="grey">Country Name</th>
+                                <th class="red">Total</th>
+                                <th class="green">Completed</th>
+                                <th class="blue">In-completed</th>
+                            </tr>
+                            <tr>
+                                <td class="grey" width="40%">Australia</td>
+                                <td class="red" width="20%">17</td>
+                                <td class="green" width="20%">0</td>
+                                <td class="blue" width="20%">17</td>
+                            </tr>
+                        </table>
+                    </mat-card>
+                </div>
+                <span fxFlex="2"></span>
+                <div class="country-fic-content-box" fxFlex="49" fxFlex.sm="100" fxFlex.xs="100">
+                    <mat-card>
+                        <table width="100%" cellpadding="0" cellspacing="0" class="country-fic-table">
+                            <tr>
+                                <th class="grey">Country Name</th>
+                                <th class="red">Total</th>
+                                <th class="green">Completed</th>
+                                <th class="blue">In-completed</th>
+                            </tr>
+                            <tr>
+                                <td class="grey" width="40%">Australia</td>
+                                <td class="red" width="20%">17</td>
+                                <td class="green" width="20%">0</td>
+                                <td class="blue" width="20%">17</td>
+                            </tr>
+                        </table>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

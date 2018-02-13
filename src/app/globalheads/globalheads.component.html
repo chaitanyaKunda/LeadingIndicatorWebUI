@@ -1,0 +1,278 @@
+<div fxLayout="column" fxFlex class="main-right">
+  <mat-toolbar class="LI-toolbar" fxFlex="initial">
+      <div fxLayout="row" fxFlex class="header">
+          <div fxFlex="initial" fxLayoutAlign="start center">
+              <h2 class="header-title">Global Heads</h2>
+          </div>
+          <div fxFlex fxLayout="row" fxLayoutAlign="end center">
+            <div fxFlex="40" class="header-search" fxHide.xs="true" fxHide.sm="true">
+                <input type="text" placeholder="Search" class="search-txtbox">
+            </div> 
+            <div fxHide.md="true" fxHide.lg="true" matTooltip="Search" matTooltipPosition="left">
+                <button mat-mini-fab fxHide.md="true" fxHide.lg="true"><i class="material-icons">search</i></button>
+            </div>
+            <span fxFlex="2"></span>
+            <button mat-raised-button color="primary" fxHide.xs="true" fxHide.sm="true">Add New Head</button>
+            <button mat-mini-fab fxHide.md="true" fxHide.lg="true" matTooltip="Add New Head"><i class="material-icons">add</i></button>              
+          </div>
+      </div>
+  </mat-toolbar>
+  <div fxFlex class="main-right-content overflow-auto">
+    <div class="addbranch">
+      <div class="branch-form" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+        <div fxFlex="32" class="form-control">
+            <select class="form-select">
+                <option>Select Country</option>
+                <option>Ind</option>
+                <option>USA</option>
+                <option>UK</option>
+            </select>
+        </div>
+        <span fxFlex="2"></span>
+        <div fxFlex class="form-control">
+            <input type="text" placeholder="Country Head Name" class="form-txtbox">
+        </div>
+        <span fxFlex="2"></span>
+        <div fxFlex="initial" class="form-control">
+            <button mat-raised-button color="primary">Submit</button>
+            <button mat-raised-button class="close-btn">Close</button>
+        </div>
+      </div>
+    </div>
+    <div class="gh-list-sec">
+      <div class="country-fic-header" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+          <div fxFlex="50" class="country-fic-title" fxLayoutAlign="start end">
+              <h3>Global Heads List</h3>
+          </div>
+      </div>
+      <div class="gh-list-sec-content">
+        <div fxLayout="column">
+          <div class="gh-list-box">
+              <div fxLayout="row" fxLayout.md="column" fxLayout.sm="column" fxLayout.xs="column">
+                <div fxFlex="15" class="m-bottom-10">
+                  <label class="country-label">Country Name</label>
+                  <p>Australia</p>
+                </div>
+                <span fxFlex="2"></span>
+                <div fxFlex="83">
+                  <div fxLayout="row" fxLayoutWrap="wrap">
+                    <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                      <div fxLayout="row">
+                        <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                        <div fxFlex class="image-avatar-data">
+                          <p class="image-avatar-name">Dinesh Gunta</p>
+                          <p class="image-avatar-mail">dgunta@agility.com</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                      <div fxLayout="row">
+                        <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                        <div fxFlex class="image-avatar-data">
+                          <p class="image-avatar-name">Sridhar Bandaru</p>
+                          <p class="image-avatar-mail">sbandaru@agility.com</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                      <div fxLayout="row">
+                        <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                        <div fxFlex class="image-avatar-data">
+                          <p class="image-avatar-name">Prasanna Pattam</p>
+                          <p class="image-avatar-mail">ppattam@agility.com</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                      <div fxLayout="row">
+                        <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                        <div fxFlex class="image-avatar-data">
+                          <p class="image-avatar-name">Amarnath Adidam</p>
+                          <p class="image-avatar-mail">aadidam@agility.com</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                      <div fxLayout="row">
+                        <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                        <div fxFlex class="image-avatar-data">
+                          <p class="image-avatar-name">Raj Gunturu</p>
+                          <p class="image-avatar-mail">rgunturu@agility.com</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                      <div fxLayout="row">
+                        <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                        <div fxFlex class="image-avatar-data">
+                          <p class="image-avatar-name">Vinay Kakaraparti</p>
+                          <p class="image-avatar-mail">vkakaraparti@agility.com</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                      <div fxLayout="row">
+                        <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                        <div fxFlex class="image-avatar-data">
+                          <p class="image-avatar-name">Raj Gunturu</p>
+                          <p class="image-avatar-mail">rgunturu@agility.com</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                      <div fxLayout="row">
+                        <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                        <div fxFlex class="image-avatar-data">
+                          <p class="image-avatar-name">Raj Gunturu</p>
+                          <p class="image-avatar-mail">rgunturu@agility.com</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                      <div fxLayout="row">
+                        <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                        <div fxFlex class="image-avatar-data">
+                          <p class="image-avatar-name">Raj Gunturu</p>
+                          <p class="image-avatar-mail">rgunturu@agility.com</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                      <div fxLayout="row">
+                        <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                        <div fxFlex class="image-avatar-data">
+                          <p class="image-avatar-name">Raj Gunturu</p>
+                          <p class="image-avatar-mail">rgunturu@agility.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="gh-list-box">
+            <div fxLayout="row" fxLayout.md="column" fxLayout.sm="column" fxLayout.xs="column">
+              <div fxFlex="15" class="m-bottom-10">
+                <label class="country-label">Country Name</label>
+                <p>China</p>
+              </div>
+              <span fxFlex="2"></span>
+              <div fxFlex="83">
+                <div fxLayout="row" fxLayoutWrap="wrap">
+                  <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                    <div fxLayout="row">
+                      <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                      <div fxFlex class="image-avatar-data">
+                        <p class="image-avatar-name">Dinesh Gunta</p>
+                        <p class="image-avatar-mail">dgunta@agility.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                    <div fxLayout="row">
+                      <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                      <div fxFlex class="image-avatar-data">
+                        <p class="image-avatar-name">Sridhar Bandaru</p>
+                        <p class="image-avatar-mail">sbandaru@agility.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                    <div fxLayout="row">
+                      <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                      <div fxFlex class="image-avatar-data">
+                        <p class="image-avatar-name">Prasanna Pattam</p>
+                        <p class="image-avatar-mail">ppattam@agility.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                    <div fxLayout="row">
+                      <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                      <div fxFlex class="image-avatar-data">
+                        <p class="image-avatar-name">Amarnath Adidam</p>
+                        <p class="image-avatar-mail">aadidam@agility.com</p>
+                      </div>
+                    </div>
+                  </div>                      
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gh-list-box">
+            <div fxLayout="row" fxLayout.md="column" fxLayout.sm="column" fxLayout.xs="column">
+              <div fxFlex="15" class="m-bottom-10">
+                <label class="country-label">Country Name</label>
+                <p>Japan</p>
+              </div>
+              <span fxFlex="2"></span>
+              <div fxFlex="83">
+                <div fxLayout="row" fxLayoutWrap="wrap">
+                  <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                    <div fxLayout="row">
+                      <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                      <div fxFlex class="image-avatar-data">
+                        <p class="image-avatar-name">Dinesh Gunta</p>
+                        <p class="image-avatar-mail">dgunta@agility.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                    <div fxLayout="row">
+                      <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                      <div fxFlex class="image-avatar-data">
+                        <p class="image-avatar-name">Sridhar Bandaru</p>
+                        <p class="image-avatar-mail">sbandaru@agility.com</p>
+                      </div>
+                    </div>
+                  </div>                                          
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gh-list-box">
+            <div fxLayout="row" fxLayout.md="column" fxLayout.sm="column" fxLayout.xs="column">
+              <div fxFlex="15" class="m-bottom-10">
+                <label class="country-label">Country Name</label>
+                <p>Bangladesh</p>
+              </div>
+              <span fxFlex="2"></span>
+              <div fxFlex="83">
+                <div fxLayout="row" fxLayoutWrap="wrap">
+                  <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                    <div fxLayout="row">
+                      <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                      <div fxFlex class="image-avatar-data">
+                        <p class="image-avatar-name">Dinesh Gunta</p>
+                        <p class="image-avatar-mail">dgunta@agility.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                    <div fxLayout="row">
+                      <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                      <div fxFlex class="image-avatar-data">
+                        <p class="image-avatar-name">Sridhar Bandaru</p>
+                        <p class="image-avatar-mail">sbandaru@agility.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" class="country-avatar-details">
+                    <div fxLayout="row">
+                      <div class="image-avatar" fxFlex="initial" fxLayoutAlign="center center">DG</div>
+                      <div fxFlex class="image-avatar-data">
+                        <p class="image-avatar-name">Sridhar Bandaru</p>
+                        <p class="image-avatar-mail">sbandaru@agility.com</p>
+                      </div>
+                    </div>
+                  </div>                                         
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  

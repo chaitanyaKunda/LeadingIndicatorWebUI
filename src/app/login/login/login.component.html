@@ -1,0 +1,28 @@
+ <div class="login-page" fxLayout="column">
+    <div fxFlex fxLayout="row">
+      <div fxFlex fxHide.xs="true" fxHide.sm="true"></div>
+      <div fxFlex="50" fxFlex.xs="100" fxFlex.sm="100" fxLayout="column">
+        <div fxFlex fxLayoutAlign="end center" fxLayoutAlign.sm="center center">
+          <div class="login-box">
+            <img src="assets/images/login-logo.png">
+            <div class="login-title">
+              <h2>Login</h2>
+            </div>
+            <form class="example-form">
+              <div fxLayout="column">
+                <mat-form-field class="display-block">
+                  <input matInput placeholder="Email">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input type="password" matInput placeholder="Password">
+                </mat-form-field>
+                <div fxFlex="initial">
+                  <button mat-button (click) = "onSubmit()" class="green-btn login-btn">Login</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
